@@ -10,7 +10,7 @@ split_data:
   test_size: 0.2
   validation_size: 0.1
   random_state: 42
-  stratify_column: null  # Set to column name if you want stratified split
+  stratify_column: null
 
 # Preprocessing Configuration
 preprocessing:
@@ -24,12 +24,20 @@ preprocessing:
 # Feature Engineering Configuration
 feature_engineering:
   vectorizer: "tfidf"
-  ngram_range: [1, 3]
+  ngrams_range: [1, 3]
   max_features: 1000
   min_df: 2
   max_df: 0.95
 
-# Model Training Configuration
+# Model Building Configuration
+model_building:
+  max_depth: 20
+  n_estimators: 367
+  max_features: 1000
+  learning_rate: 0.09
+  ngrams_range: [1, 3] 
+
+# Model Training Configuration (keep for future use)
 model_training:
   model_type: "xgboost"
   learning_rate: 0.09
@@ -37,6 +45,7 @@ model_training:
   n_estimators: 367
   early_stopping_rounds: 10
   eval_metric: "mlogloss"
+  ngram_range: [1, 3]
 
 # Model Evaluation Configuration
 evaluation:
