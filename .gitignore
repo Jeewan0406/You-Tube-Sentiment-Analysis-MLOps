@@ -1,0 +1,44 @@
+# Python / Virtual Environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Logs
+*.log
+preprocessing.log
+data_ingestion.log
+
+# Data (DVC manages these)
+/data/raw/*
+/data/interim/*
+/data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# DVC cache
+.dvc/cache/
+.dvc/tmp/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Models (if large)
+/models/*.pkl
+/models/*.h5
+/models/*.joblib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
