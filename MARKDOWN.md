@@ -68,3 +68,10 @@ Step 4: dvc init
 - Initialization sets up basic rules and structures so system knows how to work before doing any real task. dvc init means initializing Data Version Control (DVC) in your project so the project knows how to track data, models, and ML pipelines in a structured way. It is a one-time setup step that tells the project environment:
 
 Step to check dvc 
+
+
+# **FLASK**
+```python
+app = Flask(__name__)
+```
+- Flask is just a blueprint for creating web applications,suggest how to buld application, how to send and receive responses, but Flask does nothing until 
